@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&family=Roboto:wght@400;700&display=swap');
+
+#personal-image {
+    height: 14em;
+    width: 14em;
+}
+
+.header {
+    border-radius: 1em;
+    background: #2e3440;
+    color: #eceff4;
+}
+
+.intro-text {
+    width: 75%;
+}
+
+.personal-name {
+    font: 800 3em 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.personal-subtitle {
+    font: 1.2em Roboto, sans-serif;
+}
+
+.personal-desc {
+    font: light "Open Sans", sans-serif;
+}
+
+.introduction {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1em;
+    column-gap: 1em;
+    align-items: center;
+}
+
+hr {
+    width: 80%;
+}

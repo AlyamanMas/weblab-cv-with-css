@@ -25,14 +25,13 @@
         <title>Alyaman Maasarani's CV</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./main.css" type="text/css" media="screen" />
 
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
     </head>
-    <body bgcolor="#ECEFF4" text="#ECEFF4"
-          link="#88C0D0" alink="#88C0D0" vlink="#88C0D0"
-          leftmargin="0px" topmargin="0px" rightmargin="0px">
+    <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">
             You are using an <strong>outdated</strong> browser. Please
@@ -41,10 +40,27 @@
             </p>
         <![endif]-->
 
-        <!--Header iframe-->
-        <!--TODO: Add introduction to myself-->
-        <iframe frameborder="0" src="./header.html" width="100%" height="300px"> </iframe>
-        <!--Iframe containing the rest of the document-->
-        <iframe frameborder="0" src="./contents.html" width="100%" height="1400px"></iframe>
+        <div class="header">
+            <div class="introduction">
+                <img src="./res/personal-image.png" alt="Personal Image" id="personal-image"/>
+                <div class="intro-text">
+                    <p class="personal-name">
+                        Alyaman Maasarani
+                    </p>
+                    <p class="personal-subtitle">
+                        First Year Computer Science Student at BAU
+                    </p>
+                    <p class="personal-desc">
+                        A passionate computer science student studying at the BAU with a
+                        scholarship. I have loved computers and messing with them since I
+                        was a child; this lead me to choosing computer science as my major.
+                        I'm mostly interested in A.I., Linux, Rust, and operating systems.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <p>hello</p>
+
+        </div>
     </body>
 </html>
