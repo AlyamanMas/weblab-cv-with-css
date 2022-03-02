@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;600;700;800&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-image: url(./res/bg-colored.png);
+}
+
+/*
+ * Inside Header {{{
+ */
 
 #personal-image {
     height: 14em;
@@ -11,6 +19,11 @@
     color: #eceff4;
 }
 
+.header a {
+    color: #88C0D0;
+    text-decoration: none;
+}
+
 .intro-text {
     width: 75%;
 }
@@ -21,14 +34,14 @@
 }
 
 .personal-subtitle {
-    font: 1.2em Roboto, sans-serif;
+    font: 600 1.2em 'Open Sans', sans-serif;
 }
 
 .personal-desc {
     font: light "Open Sans", sans-serif;
 }
 
-.introduction {
+.introduction, .social-flexbox {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -39,4 +52,14 @@
 
 hr {
     width: 80%;
+}
+
+/* }}}
+ *
+ *  Actual Content {{{
+ */
+
+.content-card .section .section-title {
+    font: 1.5em 'Lobster', cursive;
+    text-align: center;
 }
