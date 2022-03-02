@@ -1,0 +1,13 @@
+#+TITLE: Brainstorming for project
+* brainstorming
+** use nested tables for sort of displaying blocks
+** use icons
+** see how to do borders
+(maybe with monospace borders? and nested table with 8 elements surrounding text?)
+** use ~iframes~ for bg and fg
+using body element with attributes
+** ~align~ attribute can also be made use of
+** ~font~ element can also be made use of
+** look into having html headers and footers (persistent)
+
+* plan:
