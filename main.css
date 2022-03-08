@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;600;700;800&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;700&display=swap');
 
 body {
     background-image: url(./res/bg-colored.png);
@@ -40,6 +40,7 @@ body {
 
 .personal-desc {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .introduction, .social-flexbox {
@@ -51,7 +52,7 @@ body {
     align-items: center;
 }
 
-hr {
+.header hr {
     width: 80%;
     background-color: white;
     color: white;
@@ -74,6 +75,7 @@ hr {
 .content-card .section .section-title {
     font: 1.5em 'Lobster', cursive;
     text-align: center;
+    color: #2e3440;
 }
 
 .content-card {
@@ -85,4 +87,19 @@ hr {
 .content-card .section {
     padding: 1em;
     margin: 1em;
+}
+
+.content-card hr {
+    width: 50%;
+    /* color: #2e3440; */
+    background-color: #2e3440;
+}
+
+.section .section-cont {
+    color: #2e3440;
+}
+
+.section .section-cont a {
+    color: #5e81ac;
+    text-decoration: none;
 }
