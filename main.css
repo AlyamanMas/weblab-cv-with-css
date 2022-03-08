@@ -62,7 +62,27 @@ hr {
  *  Actual Content {{{
  */
 
+.flex-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1em;
+    column-gap: 1em;
+    align-items: flex-start;
+}
+
 .content-card .section .section-title {
     font: 1.5em 'Lobster', cursive;
     text-align: center;
+}
+
+.content-card {
+    background-color: #d8dee9b0;
+    border-radius: 1em;
+    max-width: 30em;
+}
+
+.content-card .section {
+    padding: 1em;
+    margin: 1em;
 }
