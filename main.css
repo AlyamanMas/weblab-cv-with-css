@@ -2,6 +2,7 @@
 
 body {
     background-image: url(./res/bg-colored.png);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -38,7 +39,7 @@ body {
 }
 
 .personal-desc {
-    font: light "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .introduction, .social-flexbox {
@@ -52,6 +53,8 @@ body {
 
 hr {
     width: 80%;
+    background-color: white;
+    color: white;
 }
 
 /* }}}
