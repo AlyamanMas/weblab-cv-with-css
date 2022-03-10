@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;700&family=Overpass:wght@600&display=swap');
 
 body {
     background-image: url(./res/bg-colored.png);
@@ -102,4 +102,24 @@ body {
 .section .section-cont a {
     color: #5e81ac;
     text-decoration: none;
+}
+
+#prog-table th {
+    font: 1.2em "Overpass", sans-serif;
+    padding: 0.5em 0 0.5em;
+}
+
+#prog-table tr > td:first-child {
+    border-right: solid #2e3440;
+    border-right-width: 0.1em;
+    padding-right: 0.5em;
+}
+
+#prog-table tr > td:nth-child(2) {
+    padding-left: 0.5em;
+}
+
+#prog-table {
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
 }
