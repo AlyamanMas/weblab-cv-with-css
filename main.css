@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;700&family=Overpass:wght@600&display=swap');
+@import url('./nord.css');
 
 body {
     background-image: url(./res/bg-colored.png);
@@ -156,3 +157,5 @@ body {
     border-collapse: separate;
     border-spacing: 0 0.5em;
 }
+
+/* TRIPOLI STUFF */
