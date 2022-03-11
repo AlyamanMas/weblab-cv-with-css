@@ -30,12 +30,45 @@ body {
 }
 
 .personal-name {
-    font: 800 3em 'Open Sans', sans-serif;
+    font: 3em 'Open Sans', sans-serif;
+    font-variant: small-caps;
+    font-weight: 800;
     text-align: center;
 }
 
-.personal-subtitle {
-    font: 600 1.2em 'Open Sans', sans-serif;
+.subtitle {
+    font: 1.2em 'Overpass', sans-serif;
+}
+
+.flex-grid-halfs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.flex-grid-halfs .col {
+  width: 48%;
+}
+
+.some-info .col {
+    padding: 0.5em 0;
+}
+
+.flex-grid-halfs > .col:nth-child(2) {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+#city-ref {
+    background-color: #4c566a;
+    text-align: center;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    box-shadow: 0 5px 5px 1px #00000044;
+    transition: box-shadow 0.3s ease-in-out;
+    color: #eceff4;
+}
+#city-ref:hover {
+    box-shadow: 0 8px 5px 2px #00000050;
 }
 
 .personal-desc {
