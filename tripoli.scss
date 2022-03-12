@@ -37,12 +37,14 @@ body {
         padding: 0.5em;
         text-decoration: none;
         font-size: 1.3em;
+
+        &:hover {
+            background-color: $nord2;
+            color: $nord8;
+        }
+
     }
 
-    a:hover {
-        background-color: $nord2;
-        color: $nord8;
-    }
 }
 
 .header {
@@ -62,21 +64,34 @@ body {
 
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1em 1em;
+    gap: 1em;
 
-    #intro {
-        flex-grow: 2;
+    :first-child {
+        flex-grow: 3;
+        flex-basis: 20em;
     }
+
+    :nth-child(2) {
+        flex-grow: 1;
+        flex-basis: 20em;
+    }
+
+    // #intro {
+    //     flex-grow: 3;
+    //     flex-basis: 20em;
+    // }
 
     #history {
         @include card-border($nord11);
-        flex-grow: 1;
     }
 
     .content-sec {
 
-        padding: 1em 10vw;
-        margin: 1em 5vw;
-        max-width: 30em;
+        padding: 1em 2em;
+        // margin: 1em 0;
+        // max-width: 30em;
         background-color: $nord4;
         @include opensans($weight: 300);
 
@@ -89,7 +104,12 @@ body {
         }
 
         iframe {
-            width: 100%;
+            max-width: 100%;
+        }
+
+        a {
+            color: $nord10;
+            text-decoration: none;
         }
     }
 }

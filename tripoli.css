@@ -26,9 +26,9 @@ body {
     padding: 0.5em;
     text-decoration: none;
     font-size: 1.3em; }
-  .navbar a:hover {
-    background-color: #434c5e;
-    color: #88c0d0; }
+    .navbar a:hover {
+      background-color: #434c5e;
+      color: #88c0d0; }
 
 .header {
   background-image: url(./res/tripoli-alt.jpg);
@@ -45,17 +45,21 @@ body {
 
 .flex-sec {
   display: flex;
-  flex-flow: row wrap; }
-  .flex-sec #intro {
-    flex-grow: 2; }
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 1em 1em;
+  gap: 1em; }
+  .flex-sec :first-child {
+    flex-grow: 3;
+    flex-basis: 20em; }
+  .flex-sec :nth-child(2) {
+    flex-grow: 1;
+    flex-basis: 20em; }
   .flex-sec #history {
     border-radius: 2rem;
-    border-left: 0.5rem solid #bf616a;
-    flex-grow: 1; }
+    border-left: 0.5rem solid #bf616a; }
   .flex-sec .content-sec {
-    padding: 1em 10vw;
-    margin: 1em 5vw;
-    max-width: 30em;
+    padding: 1em 2em;
     background-color: #d8dee9;
     font-family: "Open Sans", "Roboto", sans-serif;
     font-size: 1em;
@@ -67,6 +71,9 @@ body {
       font-family: "Lobster", cursive;
       font-size: 2em; }
     .flex-sec .content-sec iframe {
-      width: 100%; }
+      max-width: 100%; }
+    .flex-sec .content-sec a {
+      color: #5e81ac;
+      text-decoration: none; }
 
 /*# sourceMappingURL=tripoli.css.map */
