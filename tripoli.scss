@@ -1,9 +1,15 @@
 @import "./nord.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@400;700&family=Overpass:wght@600&display=swap');
+
 @mixin opensans($size: 1em, $weight: 400) {
     font-family: "Open Sans", "Roboto", sans-serif;
     font-size: $size;
     font-weight: $weight;
+}
+
+@mixin card-border($color: $nord14, $radius: 2rem, $width: 0.5rem) {
+        border-radius: $radius;
+        border-left: $width solid $color;
 }
 
 body {
@@ -15,7 +21,7 @@ body {
 
 .navbar {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     background-color: $nord1;
@@ -52,25 +58,38 @@ body {
     border-radius: 0 0 2rem 2rem;
 }
 
-.content-sec {
+.flex-sec {
 
-    padding: 1em 10vw;
-    margin: 1em 5vw;
-    max-width: 30em;
-    background-color: $nord4;
-    @include opensans($weight: 300);
+    display: flex;
+    flex-flow: row wrap;
 
-    border-radius: 2rem;
-    border-left: 0.5rem solid $nord14;
-
-    .subtitle {
-        text-align: center;
-        font-family: "Lobster", cursive;
-        font-size: 2em;
+    #intro {
+        flex-grow: 2;
     }
 
-    iframe {
-        width: 100%;
-        min-height: 315px;
+    #history {
+        @include card-border($nord11);
+        flex-grow: 1;
+    }
+
+    .content-sec {
+
+        padding: 1em 10vw;
+        margin: 1em 5vw;
+        max-width: 30em;
+        background-color: $nord4;
+        @include opensans($weight: 300);
+
+        @include card-border();
+
+        .subtitle {
+            text-align: center;
+            font-family: "Lobster", cursive;
+            font-size: 2em;
+        }
+
+        iframe {
+            width: 100%;
+        }
     }
 }

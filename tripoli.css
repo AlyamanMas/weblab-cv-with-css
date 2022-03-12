@@ -9,7 +9,7 @@ body {
 
 .navbar {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   background-color: #3b4252;
@@ -43,22 +43,30 @@ body {
   padding: 15vh 0;
   border-radius: 0 0 2rem 2rem; }
 
-.content-sec {
-  padding: 1em 10vw;
-  margin: 1em 5vw;
-  max-width: 30em;
-  background-color: #d8dee9;
-  font-family: "Open Sans", "Roboto", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  border-radius: 2rem;
-  border-left: 0.5rem solid #a3be8c; }
-  .content-sec .subtitle {
-    text-align: center;
-    font-family: "Lobster", cursive;
-    font-size: 2em; }
-  .content-sec iframe {
-    width: 100%;
-    min-height: 315px; }
+.flex-sec {
+  display: flex;
+  flex-flow: row wrap; }
+  .flex-sec #intro {
+    flex-grow: 2; }
+  .flex-sec #history {
+    border-radius: 2rem;
+    border-left: 0.5rem solid #bf616a;
+    flex-grow: 1; }
+  .flex-sec .content-sec {
+    padding: 1em 10vw;
+    margin: 1em 5vw;
+    max-width: 30em;
+    background-color: #d8dee9;
+    font-family: "Open Sans", "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 2rem;
+    border-left: 0.5rem solid #a3be8c; }
+    .flex-sec .content-sec .subtitle {
+      text-align: center;
+      font-family: "Lobster", cursive;
+      font-size: 2em; }
+    .flex-sec .content-sec iframe {
+      width: 100%; }
 
 /*# sourceMappingURL=tripoli.css.map */
